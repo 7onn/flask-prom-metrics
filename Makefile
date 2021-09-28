@@ -3,7 +3,7 @@ default: help
 help:
 	@echo "Available commands:"
 	@echo "- make bump_version"
-	@echo "- make contrib"
+	@echo "- make install_git_semver"
 	@echo ""
 
 bump_version:
@@ -11,9 +11,7 @@ bump_version:
 	git status
 	git diff setup.cfg
 
-contrib: install_semver
-
-install_semver:
+install_git_semver:
 	rm -rf /tmp/git-semver
 	git clone https://github.com/markchalloner/git-semver.git /tmp/git-semver  
 	sudo /tmp/git-semver/install.sh
