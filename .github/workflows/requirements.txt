@@ -1,4 +1,4 @@
-coverage ~=4.0
-setuptools >=46.4.0
+build
+setuptools
 wheel
 auditwheel
