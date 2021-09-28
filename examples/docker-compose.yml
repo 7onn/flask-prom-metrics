@@ -1,0 +1,8 @@
+version: "2"
+services:
+  prometheus:
+    network_mode: host
+    container_name: prometheus
+    image: prom/prometheus:latest
+    volumes:
+      - ./prometheus.yaml:/etc/prometheus/prometheus.yml
